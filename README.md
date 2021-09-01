@@ -1,64 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Como inicializar el proyecto
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Para inicializar el proyecto es necesario que tenga instalado Laravel en su versión mas resiente, al igual deberá tener instalado Composer.
 
-## About Laravel
+Paso 1: debe entrar a línea de comando (CMD) y ubicarse en la carpeta del proyecto ejemplo: C:\xampp\htdocs\Login>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Paso2: Una vez estando ubicado en la carpeta del proyecto utilizamos el comando a continuación C:\xampp\htdocs\Login>php artisan serve
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Al ejecutar este comando debe aparecer por ejemplo http://127.0.0.1:8000 la ruta y el puerto donde esta corriendo nuestro proyecto Esto con el fin de inicializar el servidor y poder correr el proyecto en el navegador mostrando el archivo index.php que se encuentra en la carpeta public del proyecto.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Funcionalidades
 
-## Learning Laravel
+Login 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1.Cuenta con un login para inicio de sección el cual pide como datos correo y contraseña.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2.Puede recordar usuario, para que sea más fácil el inicio de sección.
 
-## Laravel Sponsors
+3.Valida campos vacíos al momento de presionar el botón Login muestra la alerta si es que existen campos vacíos.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+4.Validación de correos, si el correo esta mal escrito salta una notificación.
 
-### Premium Partners
+Register
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+1.Para el proceso de registro se piden los siguientes datos Name, E-Mail, Password y confirm Password.
 
-## Contributing
+2.Validar campos vacíos si es que existe algún campo vacío.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3.Validacion de contraseña de 8 caracteres o más.
 
-## Code of Conduct
+4.Confirmacion de contraseña para validar si las contraseñas coinciden.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5.Validacion de correo, esto para saber si está bien escrito el correo.
 
-## Security Vulnerabilities
+6.Validacion de correos registrados, si un correo ya está registrado no deja hacer otro registro con ese mismo correo.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Logout
 
-## License
+1.cuando estas registrado puedes hacer un logout y salir del dashboard.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Bonus 
+
+Enlace página web: http://loginjj.herokuapp.com/
+
